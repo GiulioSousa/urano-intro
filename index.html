@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urano | Capítulo 1</title>
+    <link href="http://fonts.cdnfonts.com/css/ocr-a-extended?styles=15962" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <main class="container">
+        <section class="sec-titulo">
+            <p class="jupiter">j</p>
+            <p class="jupiter">u</p>
+            <p class="jupiter">p</p>
+            <p class="jupiter">i</p>
+            <p class="jupiter">t</p>
+            <p class="jupiter">e</p>
+            <p class="jupiter">r</p>
+        </section>        
+        <section class="section img1">
+            <div class="header">
+            </div>
+        </section>
+        <section class="section img2">
+            <div class="header"></div>
+        </section>
+        <section class="section img3">
+            <div class="header"></div>
+        </section>
+        <section class="section img4">
+            <div class="header"></div>
+        </section>
+    </main>
+    <script>
+
+        let scrollFx = document.querySelector('.container');
+        let jupiter = document.querySelectorAll('.jupiter');
+        let value = 100;
+
+        function move(element, speed) {
+            scrollFx.addEventListener('scroll', function () {
+                element.style.top = `${(value * speed) + value}px`
+                console.log(value)
+            })
+        }
+
+        move(jupiter[0], 20.0);
+        move(jupiter[1], 10.8);
+        move(jupiter[2], 10.9);
+        move(jupiter[3], 1.85);
+        move(jupiter[4], 1.7);
+        move(jupiter[5], 1.75);
+        move(jupiter[6], 1.8);
+    </script>
+</body>
+
+</html>
